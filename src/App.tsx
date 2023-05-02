@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Layuot } from "./components/Layuot";
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import { InputAmount } from "./components/inputAmount";
 import { CountrySelection } from "./components/countrySelection";
