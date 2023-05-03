@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { InputAmount } from "./components/inputAmount";
 import { CountrySelection } from "./components/countrySelection";
 import { SwitchСurrency } from "./components/switchСurrency";

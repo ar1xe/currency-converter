@@ -1,7 +1,6 @@
 import React, { FC, SyntheticEvent } from "react";
 import { Grid, Autocomplete, TextField, Skeleton } from "@mui/material";
 import { CountriesAPI } from "../api/countriesAPI";
-import { urlAPI } from "../api/constants";
 
 type CountrySelectionPropsTypes = {
   label: string;

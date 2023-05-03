@@ -1,4 +1,4 @@
-import React, { ChangeEvent, ChangeEventHandler, useContext } from "react";
+import React, { useContext } from "react";
 import { Grid, InputAdornment, TextField } from "@mui/material";
 import { CurrencyContext } from "../context/CurrencyContext";
 
