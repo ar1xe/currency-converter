@@ -4,6 +4,7 @@ import { InputAmount } from "./components/inputAmount";
 import { CountrySelection } from "./components/countrySelection";
 import { SwitchСurrency } from "./components/switchСurrency";
 import { CurrencyContext } from "./context/CurrencyContext";
+import { urlAPI } from "../src/api/constants";
 import axios from "axios";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
 
   useEffect(() => {
     if (amount) {
-      axios("https://api.freecurrencyapi.com/v1/latest", {
+      axios(urlAPI, {
         params: {
           apikey: process.env.REACT_APP_API_KEY,
           base_currency: fromCurrency,

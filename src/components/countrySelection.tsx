@@ -1,6 +1,7 @@
 import React, { FC, SyntheticEvent } from "react";
 import { Grid, Autocomplete, TextField, Skeleton } from "@mui/material";
 import { CountriesAPI } from "../api/countriesAPI";
+import { urlAPI } from "../api/constants";
 
 type CountrySelectionPropsTypes = {
   label: string;
@@ -13,9 +14,7 @@ export const CountrySelection: FC<CountrySelectionPropsTypes> = ({
   value,
   setValue,
 }) => {
-  const { data, loaded } = CountriesAPI(
-    "https://api.freecurrencyapi.com/v1/latest?apikey=821V1ICc0O92crJcaFR7773pMRnerItRuoSLcZCp"
-  );
+  const { data, loaded } = CountriesAPI(process.env.REACT_APP_API_ENDPOINT as string);
 
   const filteredCountry = { ...data?.data };
   const dataCountries = Object.keys(filteredCountry);
